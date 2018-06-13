@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:noHistory = "true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/stepIcon"
+            android:layout_width="84dp"
+            android:layout_height="67dp"
+            android:src="@drawable/foot" />
+
+        <TextView
+            android:id="@+id/stepsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="0"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tblTop10List"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="23dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/timerIcon"
+                android:layout_width="25dp"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                app:srcCompat="@drawable/timer" />
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="11dp"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_column="0"
+                android:text="00:00:00" />
+
+
+            <ImageView
+                android:id="@+id/velocityIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                app:srcCompat="@drawable/speedmetermax" />
+
+            <TextView
+                android:id="@+id/velocityText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="0.00" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/meterIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                app:srcCompat="@drawable/ruler" />
+
+            <TextView
+                android:id="@+id/metersText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_column="0"
+                android:text="0.00" />
+
+
+            <ImageView
+                android:id="@+id/caloriesIcon"
+                android:layout_width="27dp"
+                android:layout_height="50dp"
+                android:layout_column="1"
+                app:srcCompat="@drawable/fire" />
+
+            <TextView
+                android:id="@+id/caloriesText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="0.00" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:text="Delete entry" />
+    </LinearLayout>
+
+</LinearLayout>

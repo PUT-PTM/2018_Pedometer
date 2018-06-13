@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:noHistory = "true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/genderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your gender:" />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/maleRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <RadioButton
+        android:id="@+id/femaleRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="106dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your weight:" />
+
+    <Spinner
+        android:id="@+id/weightSpinner"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your height:" />
+
+    <Spinner
+        android:id="@+id/heightSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>

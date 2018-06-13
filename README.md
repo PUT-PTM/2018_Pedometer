@@ -32,8 +32,8 @@ The diode on the Bluetooth adapter should start blinking.
 - Connect your android device trough USB port and run the code in Android Studio. Make sure you have debugging mode turned 'on'.
 
 STM32: </br>
--Connect your STM32 trough USB port and press run in System Workbench for STM32
--Connect the HC-06 Bluetooth adapter if you haven't already
+- Connect your STM32 trough USB port and press run in System Workbench for STM32
+- Connect the HC-06 Bluetooth adapter if you haven't already
 
 <h2>Future improvements:</h2>
 
